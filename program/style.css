@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap');
+html{
+    min-width: none;
+}
 .container .judul .row{
     background-color: #6239CB;
     border-radius: 20px;
     margin-top: 20px;
     padding-bottom: 10px;
     padding-bottom: 40px;
-    box-shadow: -3px -3px 2px rgba(255,255,255,255),
-    5px 5px 15px rgba(0,0,0,2),
-    15px 15px 15px rgba(255,255,255,255);
 }
 .txt1{
     font-family: 'Inter';
@@ -30,7 +30,7 @@
 }
 .breadcrumb{
     margin-left: 30px;
-    width: 350px;
+    width: fit-content;
     border-radius: 60px;
     background-color: aliceblue;
     padding-top: 5px;
@@ -40,9 +40,8 @@
 .container .penjelasan .row{
     margin-top: 50px;
     border-radius: 10px;
-    box-shadow: -3px -3px 2px rgba(255,255,255,255),
-                5px 5px 15px rgba(0,0,0,2),
-                15px 15px 15px rgba(255,255,255,255);
+    border-style: ridge;
+    border-color: #E6DCEF;
 }
 .row .penjelasan{
     text-align: center;
@@ -52,20 +51,16 @@
 }
 .teks{
     font-family: 'Inter';
-    margin-left: 20px;
-    margin-top: 20px;
     font-size: 17px;
+    margin: auto;
 }
 .container .manfaat .row{
     border-radius: 10px;
     background-color: #E6DCEF;
     margin-top: 50px;
-    box-shadow: -3px -3px 2px rgba(255,255,255,255),
-    5px 5px 15px rgba(0,0,0,2),
-    15px 15px 15px rgba(255,255,255,255);
+    padding-bottom: 20px;
 }
 .row .mp{
-    width: 500px;
     font-family: 'Inter';
     margin-left: 20px;
     margin-top: 20px;
@@ -73,9 +68,11 @@
 }
 .row .kotak3 .pm{
     font-family: 'Inter';
-    margin-left: 20px;
+    margin: auto;
     font-size: 17px;
-    width: 600px;
+}
+.row .kotak3 img{
+    width: 400px;
 }
 .row .img1{
     width: 400px;
@@ -83,9 +80,8 @@
 .container .mapel .row{
     border-radius: 10px;
     margin-top: 50px;
-    box-shadow: -3px -3px 2px rgba(255,255,255,255),
-    5px 5px 15px rgba(0,0,0,2),
-    15px 15px 15px rgba(255,255,255,255);
+    border-style: ridge;
+    border-color: #E6DCEF;
 }
 .row .materi{
     margin-top: 10px;
@@ -99,9 +95,9 @@
     justify-content: space-evenly;
 }
 .display .mtr{
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #EEE8F4;
-    padding: 1px 10px 1px 10px;
+    padding: auto;
     font-size: 19px;
 }
 .kotak3{
@@ -116,20 +112,13 @@
     margin-bottom: 20px;
     margin-right: 20px;
 }
-@media screen and (max-width: 900px) {
-    .imgg{
-        width: calc(100%);
-    }
-}
 .pm{
-    width: 500px;
+    margin: auto;
 }
 .container .wrapper .row{
+    border-radius: 10px;
     background-color: #E6DCEF;
     margin-top: 50px;
-    box-shadow: -3px -3px 2px rgba(255,255,255,255),
-    5px 5px 15px rgba(0,0,0,2),
-    15px 15px 15px rgba(255,255,255,255);
 }
 .wrapper{
     max-width: 100%;
@@ -140,24 +129,32 @@
     width: 50px;
     line-height: 46px;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     text-align: center;
     border-radius: 50%;
-    background: #6239CB;
+    background: #deb7ff;
     z-index: 1;
+    bottom: 200px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
 }
 .wrapper i:first-child{
-    left: -23px;
-    top: 50%;
-}
-.wrapper i:last-child{
-    right: -23px;
-    bottom: 33%;
 }
 .wrapper .carousel{
     white-space: nowrap;
     font-size: 0px;
     overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
 }
 .carousel img{
     height: 340px;  
