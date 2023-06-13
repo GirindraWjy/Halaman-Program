@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@600&display=swap');
+html{
+    min-width: none;
+}
+.container .judul .row{
+    background-color: #6239CB;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-bottom: 40px;
+    border-color: #deb7ff;
+}
+.txt1{
+    font-family: 'Inter';
+    font-size: 40px;
+    text-align: start;
+    color: white;
+    margin-left: 20px;
+    padding-top: 50px;
+}
+.txt2{
+    font-family: 'Inter';
+    font-size: 15px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    background-color: white;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.breadcrumb{
+    margin-left: 30px;
+    width: fit-content;
+    border-radius: 60px;
+    background-color: aliceblue;
+    padding-top: 5px;
+    background-color: rgb(255,255,255); 
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 80%);
+}
+.container .penjelasan .row{
+    margin-top: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #E6DCEF;
+    border-color: #deb7ff;
+    box-shadow: 3px 3px 3px rgb(201, 152, 248),
+                5px 5px 17px rgba(201,152,248),
+                5px 5px 5px rgba(255,255,255,255);
+}
+.row .penjelasan{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Inter';
+    margin-top: 10px;
+}
+.teks{
+    font-family: 'Inter';
+    font-size: 17px;
+    margin: auto;
+}
+.container .manfaat .row{
+    border-radius: 10px;
+    background-color: #E6DCEF;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.row .mp{
+    font-family: 'Inter';
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.row .kotak3 .pm{
+    font-family: 'Inter';
+    margin: auto;
+    font-size: 17px;
+}
+.row .kotak3 img{
+    width: 400px;
+}
+.row .img1{
+    width: 400px;
+}
+.container .mapel .row{
+    border-radius: 10px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #E6DCEF;
+    box-shadow: 3px 3px 3px rgb(201, 152, 248),
+                5px 5px 17px rgba(201,152,248),
+                5px 5px 5px rgba(255,255,255,255);
+}
+.row .materi{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 30px;
+}
+.display{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.display .mtr{
+    border-radius: 10px;
+    background-color: #EEE8F4;
+    padding: 8px;
+    font-size: 19px;
+}
+@media screen and (max-width: 795px){
+    .display{
+        text-align: start;
+        flex-direction: column;
+    }
+}
+.kotak3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.imgg{
+    position: relative;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.pm{
+    margin: auto;
+}
+.container .wrapper .row{
+    border-radius: 10px;
+    background-color: #E6DCEF;
+    margin-top: 50px;
+}
+.wrapper{
+    max-width: 100%;
+    position: relative;
+}
+.wrapper i{
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    background: #deb7ff;
+    z-index: 1;
+    bottom: 200px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .carousel{
+    white-space: nowrap;
+    font-size: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 340px;  
+    object-fit: cover;
+    width: calc(100% / 3.04);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+.carousel-inner{
+    width: calc(100% / 3);
+}
+@media screen and (max-width: 900px) {
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 550px) {
+    .carousel img{
+        width:100%;
+    }
+}
+.testi{
+    font-family: 'Inter';
+    font-size: 30px;
+    margin-top: 20px;
+}
+.container .py-5 {
+    margin-top: 50px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #deb7ff;
+    box-shadow: 3px 3px 3px rgb(201, 152, 248),
+                5px 5px 17px rgba(201,152,248),
+                5px 5px 5px rgba(255,255,255,255);
+    /* box-shadow: rgba(rgb(132, 0, 255), rgb(175, 89, 255), rgba(255, 255, 255, 0), alpha); */
+}
+
+.container .pricing {
+    margin-top: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #E6DCEF;
+    align-items: center;
+}
+.card{
+    width: 100%;
+}
+.pricing{
+    padding: 0;
+}
+.biaya{
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-size: 23px;
+}
