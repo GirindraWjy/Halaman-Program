@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@600&display=swap');
 html{
     min-width: none;
 }
@@ -8,6 +8,7 @@ html{
     margin-top: 20px;
     padding-bottom: 10px;
     padding-bottom: 40px;
+    border-color: #deb7ff;
 }
 .txt1{
     font-family: 'Inter';
@@ -40,8 +41,12 @@ html{
 .container .penjelasan .row{
     margin-top: 50px;
     border-radius: 10px;
-    border-style: ridge;
+    border-style: solid;
     border-color: #E6DCEF;
+    border-color: #deb7ff;
+    box-shadow: 3px 3px 3px rgb(201, 152, 248),
+                5px 5px 17px rgba(201,152,248),
+                5px 5px 5px rgba(255,255,255,255);
 }
 .row .penjelasan{
     text-align: center;
@@ -80,8 +85,11 @@ html{
 .container .mapel .row{
     border-radius: 10px;
     margin-top: 50px;
-    border-style: ridge;
+    border-style: solid;
     border-color: #E6DCEF;
+    box-shadow: 3px 3px 3px rgb(201, 152, 248),
+                5px 5px 17px rgba(201,152,248),
+                5px 5px 5px rgba(255,255,255,255);
 }
 .row .materi{
     margin-top: 10px;
@@ -95,10 +103,16 @@ html{
     justify-content: space-evenly;
 }
 .display .mtr{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #EEE8F4;
-    padding: auto;
+    padding: 8px;
     font-size: 19px;
+}
+@media screen and (max-width: 795px){
+    .display{
+        text-align: start;
+        flex-direction: column;
+    }
 }
 .kotak3{
     display: flex;
@@ -140,8 +154,6 @@ html{
     display: flex;
     justify-content: space-between;
 }
-.wrapper i:first-child{
-}
 .wrapper .carousel{
     white-space: nowrap;
     font-size: 0px;
@@ -179,8 +191,37 @@ html{
         width:100%;
     }
 }
-.text-center{
+.testi{
     font-family: 'Inter';
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 20px;
+}
+.container .py-5 {
+    margin-top: 50px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #deb7ff;
+    box-shadow: 3px 3px 3px rgb(201, 152, 248),
+                5px 5px 17px rgba(201,152,248),
+                5px 5px 5px rgba(255,255,255,255);
+    /* box-shadow: rgba(rgb(132, 0, 255), rgb(175, 89, 255), rgba(255, 255, 255, 0), alpha); */
+}
+
+.container .pricing {
+    margin-top: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #E6DCEF;
+    align-items: center;
+}
+.card{
+    width: 100%;
+}
+.pricing{
+    padding: 0;
+}
+.biaya{
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-size: 23px;
 }
