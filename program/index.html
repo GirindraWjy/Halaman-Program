@@ -119,36 +119,49 @@
 <!-- penjelasan end -->
 <!-- manfaat -->
 <div class="container">
-    <div class="manfaat">
-        <div class="row">
-            <b><p class="mp">Manfaat Pelatihan</p></b><br><br><br><br>
-            <div class="kotak3">
-                <p class="pm"> Pelatihan digital marketing membantu individu untuk memahami konsep dasar dan prinsip-prinsip yang mendasari pemasaran digital. Ini mencakup pemahaman tentang media sosial, optimisasi mesin pencari (SEO), iklan online, email marketing, analitik web, dan lainnya. Dengan pemahaman yang kuat tentang konsep ini, individu dapat merencanakan dan melaksanakan strategi pemasaran digital yang efektif.</p>
-            </div>
-        </div>
+  <div class="manfaat">
+    <div class="row">
+      <b><p class="mp">Manfaat Pelatihan</p></b>
+      <div class="kotak3">
+        <p class="pm">Pelatihan digital marketing membantu individu untuk memahami konsep dasar dan prinsip-prinsip yang mendasari pemasaran digital. Ini mencakup pemahaman tentang media sosial, optimisasi mesin pencari (SEO), iklan online, email marketing, analitik web, dan lainnya.</p>
+        <img class="imgg" src="assets/4822.jpg" alt="" >
+      </div>
     </div>
+  </div>
 </div>
 <!-- end manfaat -->
 <!-- materi pelatihan -->
-<div class="container">
-    <div class="mapel">
-        <div class="row">
-            <b><p class="materi">Materi Pelatihan</p></b>
-            <div class="display">
-                <p class="mtr"> 1. Product Knowledge</p>
-                <p class="mtr">2. Analisa Digital</p>
-                <p class="mtr">3. Content Digital</p>
-            </div>
-            <div class="display">
-                <p class="mtr">4. Pemasaran Website</p>
-                <p class="mtr">5. Google My Business</p>
-                <p class="mtr">6. Pemasaran Sosial Media</p>
-            </div>
-            <div class="display">
-              <p class="mtr">7. Marketplace</p>
-          </div>
-        </div>
+<div class="container mt-3 mb-3 pb-3">
+  <div class="row text-center">
+    <div class="mp mt-4 mb-4"><b>Materi Pelatihan</b></div>
+    <div class="col">
+      <div class="pk p-2">1. Product Knowledge</div>
     </div>
+    <div class="col">
+      <div class="pk p-2">2. Analisa Digital</div>
+    </div>
+    <div class="col">
+      <div class="pk p-2">3. Content Digital</div>
+    </div>
+  </div>
+  <br>
+  <div class="row text-center">
+    <div class="col">
+      <div class="pk p-2">4. Pemasaran Website</div>
+    </div>
+    <div class="col">
+      <div class="pk p-2">5. Google My Business</div>
+    </div>
+    <div class="col">
+      <div class="pk p-2">6. Pemasaran Sosial Media</div>
+    </div>
+  </div>
+  <br>
+  <div class="row text-center">
+    <div class="col">
+      <div class="pk p-2">7. Marketplace</div>
+    </div>
+  </div>
 </div>
 <!-- end materi pelatihan -->
 <!-- image slider -->
@@ -200,30 +213,25 @@
         <div class="col-lg-8">
           <h5>Form Pelatihan Digital Marketing</h5>
           <hr>
-          <form id="form-registration" method="post" action="https://campusdigital.id/program/digital-marketing/register" onsubmit="return validateForm()">
-            <input type="hidden" name="_token" value="DudYD3RiAqgQGO4yDGRJ8Y0LzGH2JGvRWF2eDw00">
-            <input type="hidden" name="id_program" value="1">
-            <div class="mb-3">
-              <label class="form-label">Nama Lengkap</label>
-              <input type="text" name="nama_lengkap" class="form-control" value="">
+          <form id="whatsapp-form">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap:</label>
+              <input type="text" id="nama" name="nama" required>
             </div>
-            <div class="mb-3">
-              <label class="form-label">Instansi</label>
-              <input type="text" name="nama_panggilan" class="form-control" value="">
+            <div class="form-group">
+              <label for="instansi">Instansi:</label>
+              <input type="text" id="instansi" name="instansi" required>
             </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="text" name="email" class="form-control" value="">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
             </div>
-            <div class="mb-3">
-              <label class="form-label">No HP / WhatsApp</label>
-              <input type="text" name="nomor_hp" class="form-control" value="">
+            <div class="form-group">
+              <label for="nohp">No HP:</label>
+              <input type="text" id="nohp" name="nohp" required>
             </div>
-            <button id="register-button" type="submit" class="btn btn-primary register">Daftar</button>
+            <button class="wa" type="submit">Kirim Pesan</button>
           </form>
-
-          <a id="send-wa" target="_blank" href="https://wa.me/"></a>
-
         </div>
       </div>
     </div>

@@ -38,14 +38,21 @@ carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-function validateForm() {
-  var name = document.forms["form-registration"]["nama_lengkap"].value;
-  var instansi = document.forms["form-registration"]["nama_panggilan"].value;
-  var email = document.forms["form-registration"]["email"].value;
-  var phoneNumber = document.forms["form-registration"]["nomor_hp"].value;
+const form = document.getElementById('whatsapp-form');
 
-  if (name === "" || instansi === "" || email === "" || phoneNumber === "") {
-    alert("Mohon lengkapi semua field sebelum mengirimkan form.");
-    return false;
-  }
-}
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const nama = document.getElementById('nama').value;
+  const instansi = document.getElementById('instansi').value;
+  const email = document.getElementById('email').value;
+  const nohp = document.getElementById('nohp').value;
+
+  const message = `Halo, saya ${encodeURIComponent(nama)} dari ${encodeURIComponent(instansi)}. Email: ${encodeURIComponent(email)}, No HP: ${encodeURIComponent(nohp)}.`;
+  const encodedMessage = encodeURIComponent(message);
+
+  const url = `https://wa.me/6281280128723?text=${encodedMessage}`;
+
+  window.location.href = url;
+});
+

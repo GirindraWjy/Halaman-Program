@@ -39,7 +39,7 @@ html{
     background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 80%);
 }
 .container .penjelasan .row{
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 10px;
     border-style: solid;
     border-color: #E6DCEF;
@@ -59,80 +59,73 @@ html{
     font-size: 17px;
     margin: auto;
 }
-.container .manfaat .row{
-    border-radius: 10px;
-    background-color: #E6DCEF;
-    margin-top: 50px;
-    padding-bottom: 20px;
-}
-.row .mp{
-    font-family: 'Inter';
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 35px;
-}
-.row .kotak3 .pm{
-    font-family: 'Inter';
-    margin: auto;
-    font-size: 17px;
-}
-.row .kotak3 img{
-    width: 400px;
-}
-.row .img1{
-    width: 400px;
-}
 .container .mapel .row{
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     border-style: solid;
     border-color: #E6DCEF;
     box-shadow: 3px 3px 3px rgb(201, 152, 248),
                 5px 5px 17px rgba(201,152,248),
                 5px 5px 5px rgba(255,255,255,255);
 }
-.row .materi{
-    margin-top: 10px;
+.container .manfaat .row{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #E6DCEF;
+    border-radius: 10px;
+}
+.kotak3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mp{
     text-align: center;
     font-family: 'Inter';
     font-size: 30px;
+    margin-top: 20px;
 }
-.display{
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
+.pm{
+    max-width: 600px;
+    width: auto;
+    margin-left: 20px;
 }
-.display .mtr{
+.kotak3 img{
+    width: 400px;
+    margin-left: 20px;
+    margin-right: 10px;
     border-radius: 10px;
-    background-color: #EEE8F4;
-    padding: 8px;
-    font-size: 19px;
 }
+@media screen and (max-width: 425px) {
+    .kotak3 img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 357px) {
+    .kotak3 img{
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 795px){
     .display{
         text-align: start;
         flex-direction: column;
     }
 }
-.kotak3{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+.container.mt-3.mb-3{
+    border: solid;
+    border-color: #E6DCEF;
+    border-radius: 10px;
 }
-.imgg{
-    position: relative;
-    width: 400px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-.pm{
-    margin: auto;
-}
+.col .pk{
+    background-color: #E6DCEF;
+    border-radius: 5px;
+} 
 .container .wrapper .row{
     border-radius: 10px;
     background-color: #E6DCEF;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .wrapper{
     max-width: 100%;
@@ -197,7 +190,7 @@ html{
     margin-top: 20px;
 }
 .container .py-5 {
-    margin-top: 50px;
+    margin-top: 20px;
     border: solid;
     border-radius: 10px;
     border-color: #deb7ff;
@@ -208,7 +201,7 @@ html{
 }
 
 .container .pricing {
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 10px;
     border: solid;
     border-color: #E6DCEF;
@@ -225,3 +218,38 @@ html{
     font-family: 'Inter';
     font-size: 23px;
 }
+.container .heading .row{
+    margin-top: 20px;
+    background-color: #E6DCEF;
+
+}
+.form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.wa:hover {
+    background-color: #45a049;
+  }
+  
