@@ -2,7 +2,7 @@
 html{
     min-width: none;
 }
-.container .judul .row{
+ .judul .row{
     background-color: #6239CB;
     border-radius: 20px;
     margin-top: 20px;
@@ -38,7 +38,7 @@ html{
     background-color: rgb(255,255,255); 
     background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 80%);
 }
-.container .penjelasan .row{
+ .penjelasan .row{
     margin-top: 20px;
     border-radius: 10px;
     border-style: solid;
@@ -59,7 +59,7 @@ html{
     font-size: 17px;
     margin: auto;
 }
-.container .mapel .row{
+ .mapel .row{
     border-radius: 10px;
     margin-top: 20px;
     border-style: solid;
@@ -68,7 +68,7 @@ html{
                 5px 5px 17px rgba(201,152,248),
                 5px 5px 5px rgba(255,255,255,255);
 }
-.container .manfaat .row{
+ .manfaat .row{
     margin-top: 20px;
     padding-bottom: 20px;
     background-color: #E6DCEF;
@@ -106,23 +106,22 @@ html{
         width: 200px;
     }
 }
-
 @media screen and (max-width: 795px){
     .display{
         text-align: start;
         flex-direction: column;
     }
 }
-.container.mt-3.mb-3{
+.mt-3.mb-3{
     border: solid;
     border-color: #E6DCEF;
     border-radius: 10px;
 }
 .col .pk{
     background-color: #E6DCEF;
-    border-radius: 5px;
+    border-radius: 20px;
 } 
-.container .wrapper .row{
+ .wrapper .row{
     border-radius: 10px;
     background-color: #E6DCEF;
     margin-top: 20px;
@@ -189,7 +188,7 @@ html{
     font-size: 30px;
     margin-top: 20px;
 }
-.container .py-5 {
+ .py-5 {
     margin-top: 20px;
     border: solid;
     border-radius: 10px;
@@ -200,7 +199,7 @@ html{
     /* box-shadow: rgba(rgb(132, 0, 255), rgb(175, 89, 255), rgba(255, 255, 255, 0), alpha); */
 }
 
-.container .pricing {
+ .pricing {
     margin-top: 20px;
     border-radius: 10px;
     border: solid;
@@ -218,38 +217,62 @@ html{
     font-family: 'Inter';
     font-size: 23px;
 }
-.container .heading .row{
+ .heading .row{
     margin-top: 20px;
     background-color: #E6DCEF;
 
 }
 .form-group {
     margin-bottom: 10px;
+    font-family: 'Inter';
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5bfa6160;
+  color: rgb(0, 180, 15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.wa:hover {
+  background-color: #45a049;
+  color: white;
+}
+.footer-section{
+  background-color: #330369;
+}
+.text-white{
+  text-decoration: none;
+}
+.col .kp{
+  background-color: #ffffff;
+} 
+.rotate {
+    animation: rotate 0.3s forwards;
   }
   
-  label {
-    display: block;
-    margin-bottom: 5px;
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
   }
   
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button.wa:hover {
-    background-color: #45a049;
-  }
   

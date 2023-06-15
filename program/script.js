@@ -48,11 +48,17 @@ form.addEventListener('submit', function(e) {
   const email = document.getElementById('email').value;
   const nohp = document.getElementById('nohp').value;
 
-  const message = `Halo, saya ${encodeURIComponent(nama)} dari ${encodeURIComponent(instansi)}. Email: ${encodeURIComponent(email)}, No HP: ${encodeURIComponent(nohp)}.`;
+  const message = `Nama Lengkap : ${encodeURIComponent(nama)}, Instansi : ${encodeURIComponent(instansi)}, Email : ${encodeURIComponent(email)}, No HP : ${encodeURIComponent(nohp)}.`;
   const encodedMessage = encodeURIComponent(message);
 
   const url = `https://wa.me/6281280128723?text=${encodedMessage}`;
 
   window.location.href = url;
 });
+const buttons = document.querySelectorAll('.btn-collapse');
 
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    this.querySelector('i.fa').classList.toggle('rotate');
+  });
+});
